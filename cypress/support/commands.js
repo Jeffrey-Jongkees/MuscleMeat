@@ -25,3 +25,5 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // Removing the added line
+
+// Adding this new line in git nano
