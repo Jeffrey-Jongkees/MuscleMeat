@@ -28,4 +28,4 @@ jobs:
         run: npm install
       
       - name: Run musclemeat login test
-        run: npm run --spec "/cypress/e2e/loginMuscleMeat.cy.js"
+        run: npm run test
