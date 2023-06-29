@@ -1,1 +1,31 @@
+# -------------------------------
+# This is my first automated test
+# -------------------------------
+name: My-AutomatedTest-Assignment
 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  musclemeat-testing-login:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@latest
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@latest
+        with:
+          node-version: 'latest'
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run musclemeat login test
+        run: npm run cy:run -- --spec "/cypress/e2e/loginMuscleMeat.cy.js"
