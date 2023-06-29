@@ -27,3 +27,5 @@
 // Removing the added line
 
 // Adding this new line in git nano
+
+// Testing merging in GitHub via pull and merge request
