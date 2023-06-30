@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "cypress run"
-=======
     "test": "cypress run --spec ../cypress/e2e/loginMuscleMeat.cy.js"
->>>>>>> f91b410bed0a689212f6b1cb08067a3e36bc4217
   },
   "keywords": [],
   "author": "",
