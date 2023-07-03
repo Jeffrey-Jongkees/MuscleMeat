@@ -15,7 +15,7 @@ class Login{
 
         fillInCredentials(strUsername, strPassword){
             this.elements.myUsername().type(strUsername);
-            this.elements.myUsername().type(strPassword);
+            this.elements.myPassword().type(strPassword);
         }
 
         loginToMuscleMeat(){
