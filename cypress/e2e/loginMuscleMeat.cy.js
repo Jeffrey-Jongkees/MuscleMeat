@@ -8,5 +8,6 @@ describe('Muscle Meat', () => {
         Login.clickMyAccount();
         Login.fillInCredentials('jeffreyjongkees@gmail.com', 'Mm_123smok3y');
         Login.loginToMuscleMeat();  
+        Login.verifyUser('Jeffrey Jongkees')
     })
   })

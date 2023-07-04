@@ -7,6 +7,7 @@ class Login{
         myUsername : () => cy.get('input[id="username"]'),
         myPassword : () => cy.get('input[id="password"]'),
         login : () => cy.get('button[value="Inloggen"]'),
+        verification : () => cy.get('strong')
         }
 
         clickMyAccount(){
@@ -20,6 +21,10 @@ class Login{
 
         loginToMuscleMeat(){
             this.elements.login().click();
+        }
+
+        verifyUser (strVerificationText) {
+            this.elements.verification().contains(strVerificationText)
         }
 }
 
