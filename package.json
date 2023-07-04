@@ -11,5 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "latest"
-  }
+  },
+  "viewportWidth": 1624,
+  "viewportHeight": 1000
 }
