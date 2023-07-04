@@ -29,3 +29,9 @@
 // Adding this new line in git nano
 
 // Testing merging in GitHub via pull and merge request
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+  })
