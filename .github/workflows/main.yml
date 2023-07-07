@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Musclemeat login result
-          path: /home/runner/work/MuscleMeat/MuscleMeat/cypress/videos/loginMuscleMeat.cy.js.mp4
+          path: muscle-video-results
     
   # obtaining-musclemeat-results-video:
   #   runs-on: ubuntu-latest
