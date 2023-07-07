@@ -36,3 +36,11 @@ jobs:
           name: Musclemeat login result
           path: /home/runner/work/MuscleMeat/MuscleMeat/cypress/videos/loginMuscleMeat.cy.js.mp4
 
+      - name: Download video
+        uses: actions/download-artifact@v3
+        with:
+          name: Musclemeat login result downloaded
+          
+      - name: Display structure of downloaded files
+        run: ls -R
+
