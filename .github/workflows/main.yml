@@ -12,7 +12,7 @@ on:
   #    - main
 
 jobs:
-  musclemeat-testing-login:
+  musclemeat-testing-login-Edge:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,14 +27,38 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-      - name: Run musclemeat login test
-        run: npm run test
+      - name: Run musclemeat login test in Edge
+        run: npm run test1
     
       - name: Upload video
         uses: actions/upload-artifact@v3
         with:
-          name: Musclemeat login result
+          name: Musclemeat login result Edge
           path: /home/runner/work/MuscleMeat/MuscleMeat/cypress/videos/loginMuscleMeat.cy.js.mp4
+
+  musclemeat-testing-login-Chrome:
+            runs-on: ubuntu-latest
+        
+            steps:
+              - name: Checkout code
+                uses: actions/checkout@v3
+                
+              - name: Set up Node.js
+                uses: actions/setup-node@v2
+                with:
+                  node-version: 18
+        
+              - name: Install dependencies
+                run: npm install
+              
+              - name: Run musclemeat login test in Chrome
+                run: npm run test2
+            
+              - name: Upload video
+                uses: actions/upload-artifact@v3
+                with:
+                  name: Musclemeat login result
+                  path: /home/runner/work/MuscleMeat/MuscleMeat/cypress/videos/loginMuscleMeat.cy.js.mp4
     
   # obtaining-musclemeat-results-video:
   #   runs-on: ubuntu-latest
