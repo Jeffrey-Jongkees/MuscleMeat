@@ -57,7 +57,7 @@ jobs:
               - name: Upload video
                 uses: actions/upload-artifact@v3
                 with:
-                  name: Musclemeat login result
+                  name: Musclemeat login result Chrome
                   path: /home/runner/work/MuscleMeat/MuscleMeat/cypress/videos/loginMuscleMeat.cy.js.mp4
     
   # obtaining-musclemeat-results-video:
