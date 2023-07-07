@@ -29,17 +29,22 @@ jobs:
       
       - name: Run musclemeat login test
         run: npm run test
-      
+    
       - name: Upload video
         uses: actions/upload-artifact@v3
         with:
           name: Musclemeat login result
           path: /home/runner/work/MuscleMeat/MuscleMeat/cypress/videos/loginMuscleMeat.cy.js.mp4
+    
+  obtaining-musclemeat-results-video:
+    runs-on: ubuntu-latest
+    needs: musclemeat-testing-login
 
+    steps:
       - name: Download video
         uses: actions/download-artifact@v3
         with:
-          name: Musclemeat login result downloaded
+          name: Musclemeat login result
           
       - name: Display structure of downloaded files
         run: ls -R
