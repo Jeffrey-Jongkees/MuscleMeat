@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test1": "cypress run --browser edge",
-    "test2": "cypress run --browser chrome"
+    "test1": "cypress run --spec cypress/e2e/loginProcedureMuscleMeat.cy.js --browser edge",
+    "test2": "cypress run --spec cypress/e2e/loginProcedureMuscleMeat.cy.js --browser edge"
   },
   "keywords": [],
   "author": "",
