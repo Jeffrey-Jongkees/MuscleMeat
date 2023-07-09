@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Musclemeat login result Edge
-          path: /home/runner/work/MuscleMeat/MuscleMeat/cypress/videos/loginMuscleMeat.cy.js.mp4
+          path: /home/runner/work/MuscleMeat/MuscleMeat/cypress/videos/loginProcedureMuscleMeat.cy.mp4
 
   musclemeat-testing-login-Chrome:
             runs-on: ubuntu-latest
