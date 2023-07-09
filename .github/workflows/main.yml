@@ -14,7 +14,7 @@ on:
 jobs:
   musclemeat-testing-login-Edge:
     runs-on: ubuntu-latest
-    # if: github.event == 'push'
+    if: github.event == 'push'
 
     steps:
       - name: Checkout code
