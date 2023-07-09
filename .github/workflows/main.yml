@@ -39,7 +39,7 @@ jobs:
 
   musclemeat-testing-login-Chrome:
             runs-on: ubuntu-latest
-            # if: github.event == 'pull_request'
+            if: github.event_name == 'pull_request'
         
             steps:
               - name: Checkout code
