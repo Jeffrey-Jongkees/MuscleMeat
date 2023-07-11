@@ -19,7 +19,7 @@ COPY ./package.json .
 # The config file is necessary to run the scripts
 COPY ./cypress.config.js .
 
-COPY cypress /musclemeat/ 
+COPY cypress . 
 # The dot tells docker to save all the files from the same folder as the Docker file
 # is in this case to a musclemeat folder in the container
 # The musclemeat folder will be automatically created, if it doesn't exist yet
