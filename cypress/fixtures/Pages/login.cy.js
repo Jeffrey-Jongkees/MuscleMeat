@@ -1,3 +1,4 @@
+import 'dotenv/config'
 class Login {
     elements = {
       myAccount: () => cy.get('a[href="https://musclemeat.nl/my-account/ "]'),
@@ -12,8 +13,8 @@ class Login {
     }
   
     fillInCredentials() {
-      const emailAddress = Cypress.env('EMAIL_ADDRESS');
-      const mmPassword = Cypress.env('MM_PASSWORD');
+      const emailAddress = process.env.EMAIL_ADDRESS;
+      const mmPassword = process.env.MM_PASSWORD;
   
       this.elements.myUsername().type(emailAddress);
       this.elements.myPassword().type(mmPassword);

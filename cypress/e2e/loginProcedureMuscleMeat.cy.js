@@ -1,4 +1,3 @@
-import 'dotenv/config'
 import Login from '../fixtures/Pages/login.cy.js'
 import Logout from '../fixtures/Pages/logout.cy.js'
 
